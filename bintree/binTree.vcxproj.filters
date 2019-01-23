@@ -20,6 +20,9 @@
     <ClCompile Include="..\UniPrint\print_HuffChar.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="二叉树学习.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinNode.h">

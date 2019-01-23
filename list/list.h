@@ -35,7 +35,7 @@ public:
 // 只读访问接口
    Rank size() const { return _size; } //规模
    bool empty() const { return _size <= 0; } //判空
-   T& operator[] ( Rank r ) const; //重载，支持循秩访问（效率低）
+   T& operator[] (Rank r) const; //重载，支持循秩访问（效率低）
    ListNodePosi(T) first() const { return header->succ; } //首节点位置
    ListNodePosi(T) last() const { return trailer->pred; } //末节点位置
    bool valid ( ListNodePosi(T) p ) //判断位置p是否对外合法

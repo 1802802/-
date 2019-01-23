@@ -39,6 +39,8 @@ void testQueue ( int n ) {
  * 测试队列
  ******************************************************************************************/
 int main ( int argc, char* argv[] ) {
+	argc = 2;
+	argv[1] = "9";
    if ( 2 > argc ) { printf ( "Usage: %s <size of test>\a\a\n", argv[0] ); return 1; }
    srand ( ( unsigned int ) time ( NULL ) );
    testQueue<int> ( atoi ( argv[1] ) ); //元素类型可以在这里任意选择

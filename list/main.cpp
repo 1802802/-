@@ -10,6 +10,7 @@
  * Test of list
  ******************************************************************************************/
 #include "list_test.h"
+#include "list.h"
 
 int testID = 0; //测试编号
 
@@ -87,7 +88,9 @@ void   testList ( int testSize ) {
 /******************************************************************************************
  * 测试列表
  ******************************************************************************************/
-int main ( int argc, char* argv[] ) {
+
+int main ( int argc, char* argv[] ) 
+{
    if ( 2 > argc ) { printf ( "Usage: %s <size of test>\a\a\n", argv[0] ); return 1; }
    srand ( ( unsigned int ) time ( NULL ) );
    testList<int> ( atoi ( argv[1] ) ); //元素类型可以在这里任意选择

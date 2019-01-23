@@ -29,7 +29,7 @@ void randomArray ( int A[], int n, int seed ) {
  * 起泡排序测试程序
  ******************************************************************************************/
 void main ( int argc, char* argv[] ) {
-   int n = 0; //array length
+   int n = 10; //array length //此处用来改写
    if ( 1 < argc ) n = atoi ( argv[1] ); if ( n < 0 ) n = 0; //make sure length is non-negative
    int* A = ( int* ) malloc ( n * sizeof ( int ) ); //allocate an array of size n
    unsigned int seed = ( unsigned int ) time ( NULL ); //A same seed is used here for comparison between different algorithms

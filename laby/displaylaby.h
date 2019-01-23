@@ -45,7 +45,7 @@ void displayLaby() { //©¼©¸©´©°©¦©¤
                case WALL:  printf ( "¨€" );   break;
                case BACKTRACKED: printf ( "¡ð" );   break;
                case AVAILABLE: printf ( "  " );   break;
-               default   : printf ( "%s", pattern[laby[i][j].outgoing][laby[i][j].incoming] );   break;
+               default   : printf ( "%s ", pattern[laby[i][j].outgoing][laby[i][j].incoming] );   break;
             }
       printf ( "\n" );
    }//for

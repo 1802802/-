@@ -57,7 +57,7 @@ template <typename T> void   testBinTree ( int h ) { //测试二叉树
    }
 }
 
-int main ( int argc, char* argv[] ) { //测试二叉树
+int main_bintree ( int argc, char* argv[] ) { //测试二叉树
    if ( 2 > argc ) { printf ( "Usage: %s <size of test>\a\a\n", argv[0] ); return 1; }
    srand ( ( unsigned int ) time ( NULL ) );
    testBinTree<int> ( atoi ( argv[1] ) ); //元素类型可以在这里任意选择
